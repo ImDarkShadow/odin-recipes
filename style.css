@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Moon+Dance&family=Waiting+for+the+Sunrise&display=swap');
+
+.odin-title {
+  font-family: 'Waiting for the Sunrise', cursive;
+  font-size: 60px;
+  text-align: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 400px;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 20px;
+  gap: 20px;
+}
+
+div img {
+
+  width: 350px;
+  height: 500px;
+  border-radius: 15px;
+}
+
+.item:hover {
+  transform: rotateY(180deg);
+
+}
+
+.thefront {
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+.theback {
+  position: absolute;
+  backface-visibility: hidden;
+  overflow: hidden;
+  text-align: center;
+  transform: rotateY(180deg);
+  border-radius: 15px;
+}
+
+div.item {
+  border: solid 4px rgb(0, 210, 238);
+  border-radius: 20px;
+  width: 350px;
+  height: 500px;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(45deg, rgba(34, 193, 195, 1) 0%, rgba(37, 221, 123, 1) 100%);
+
+}
+
+
+
+.itemname {
+  font-family: Clicker Script;
+  font-size: 55px;
+  color: #fff;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  text-decoration: none;
+  padding: 150px 0;
+}
+
+.description {
+  font-family: Moon Dance;
+
+  color: darkorchid;
+}
+
+a {
+  text-decoration: none;
+}
